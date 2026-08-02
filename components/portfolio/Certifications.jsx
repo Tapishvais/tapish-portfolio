@@ -22,6 +22,9 @@ export default function Certifications() {
             <Award className="h-5 w-5 text-cyan-300" />
             <div className="mt-3 text-xs font-mono uppercase tracking-widest text-muted-foreground">{c.provider}</div>
             <div className="mt-1 font-display text-base font-semibold">{c.title}</div>
+            {c.detail ? (
+              <div className="mt-1.5 text-xs text-muted-foreground">{c.detail}</div>
+            ) : null}
           </motion.div>
         ))}
       </div>
