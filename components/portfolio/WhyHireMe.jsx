@@ -38,12 +38,12 @@ export default function WhyHireMe() {
               whileHover={{ y: -4 }}
               className="glass gradient-border group relative overflow-hidden rounded-2xl p-5"
             >
-              <div className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-violet-500/20 to-cyan-400/20 text-violet-300">
+              <div className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-indigo-500/20 to-sky-500/20 text-indigo-300">
                 <Icon className="h-5 w-5" />
               </div>
               <h3 className="mt-4 font-display text-base font-semibold">{c.title}</h3>
               <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{c.desc}</p>
-              <div className="pointer-events-none absolute -right-10 -top-10 h-24 w-24 rounded-full bg-violet-500/10 blur-2xl transition-opacity group-hover:opacity-80" />
+              <div className="pointer-events-none absolute -right-10 -top-10 h-24 w-24 rounded-full bg-indigo-500/10 blur-2xl transition-opacity group-hover:opacity-80" />
             </motion.div>
           )
         })}

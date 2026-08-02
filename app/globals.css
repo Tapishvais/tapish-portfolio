@@ -4,25 +4,25 @@
 
 @layer base {
   :root {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 240 10% 5.5%;
-    --card-foreground: 0 0% 98%;
-    --popover: 240 10% 5%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 263 85% 66%;
+    --background: 222 25% 6%;
+    --foreground: 210 20% 96%;
+    --card: 222 22% 8.5%;
+    --card-foreground: 210 20% 96%;
+    --popover: 222 25% 7%;
+    --popover-foreground: 210 20% 96%;
+    --primary: 224 71% 60%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 240 6% 12%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 240 5% 12%;
-    --muted-foreground: 240 5% 65%;
-    --accent: 240 6% 12%;
-    --accent-foreground: 0 0% 98%;
+    --secondary: 222 18% 13%;
+    --secondary-foreground: 210 20% 96%;
+    --muted: 222 15% 14%;
+    --muted-foreground: 215 15% 65%;
+    --accent: 222 18% 13%;
+    --accent-foreground: 210 20% 96%;
     --destructive: 0 72% 51%;
     --destructive-foreground: 0 0% 98%;
-    --border: 240 5% 15%;
-    --input: 240 5% 15%;
-    --ring: 263 85% 66%;
+    --border: 222 15% 16%;
+    --input: 222 15% 16%;
+    --ring: 224 71% 60%;
     --radius: 0.75rem;
   }
 
@@ -35,14 +35,14 @@
   body {
     @apply bg-background text-foreground;
     background-image:
-      radial-gradient(ellipse 80% 60% at 50% -10%, rgba(124, 58, 237, 0.18), transparent 60%),
-      radial-gradient(ellipse 60% 50% at 90% 20%, rgba(6, 182, 212, 0.10), transparent 60%),
-      radial-gradient(ellipse 60% 50% at 10% 80%, rgba(217, 70, 239, 0.10), transparent 60%);
+      radial-gradient(ellipse 80% 60% at 50% -10%, rgba(79, 70, 229, 0.15), transparent 60%),
+      radial-gradient(ellipse 60% 50% at 90% 20%, rgba(14, 165, 233, 0.08), transparent 60%),
+      radial-gradient(ellipse 60% 50% at 10% 80%, rgba(56, 189, 248, 0.06), transparent 60%);
     background-attachment: fixed;
   }
 
   ::selection {
-    background: rgba(124, 58, 237, 0.35);
+    background: rgba(79, 70, 229, 0.35);
     color: white;
   }
 
@@ -51,12 +51,12 @@
     height: 10px;
   }
   ::-webkit-scrollbar-track {
-    background: hsl(240 10% 5%);
+    background: hsl(222 22% 6%);
   }
   ::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, #7c3aed, #06b6d4);
+    background: linear-gradient(180deg, #4f46e5, #0ea5e9);
     border-radius: 999px;
-    border: 2px solid hsl(240 10% 5%);
+    border: 2px solid hsl(222 22% 6%);
   }
 }
 
@@ -96,14 +96,14 @@
   }
 
   .text-gradient {
-    background: linear-gradient(120deg, #ffffff 0%, #d8b4fe 40%, #67e8f9 70%, #ffffff 100%);
+    background: linear-gradient(120deg, #ffffff 0%, #c7d2fe 40%, #7dd3fc 70%, #ffffff 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
   }
 
   .text-gradient-brand {
-    background: linear-gradient(120deg, #a78bfa 0%, #e879f9 50%, #22d3ee 100%);
+    background: linear-gradient(120deg, #818cf8 0%, #60a5fa 50%, #38bdf8 100%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -118,7 +118,7 @@
     inset: 0;
     border-radius: inherit;
     padding: 1px;
-    background: linear-gradient(135deg, rgba(167,139,250,0.6), rgba(34,211,238,0.4), rgba(232,121,249,0.5));
+    background: linear-gradient(135deg, rgba(129,140,248,0.55), rgba(56,189,248,0.35), rgba(96,165,250,0.45));
     -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
     -webkit-mask-composite: xor;
             mask-composite: exclude;
@@ -126,7 +126,7 @@
   }
 
   .glow-violet {
-    box-shadow: 0 0 40px -8px rgba(124, 58, 237, 0.55), 0 0 90px -20px rgba(6, 182, 212, 0.35);
+    box-shadow: 0 0 40px -8px rgba(79, 70, 229, 0.45), 0 0 90px -20px rgba(14, 165, 233, 0.25);
   }
 
   .noise::after {
@@ -177,7 +177,7 @@
   .caret::after {
     content: '|';
     margin-left: 2px;
-    color: #a78bfa;
+    color: #818cf8;
     animation: caret 1s steps(1) infinite;
   }
 }

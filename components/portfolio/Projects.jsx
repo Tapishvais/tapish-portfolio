@@ -1,10 +1,9 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ArrowUpRight, ExternalLink, Github, ScrollText, Sparkles } from 'lucide-react'
+import { ArrowUpRight, Sparkles } from 'lucide-react'
 import { PROJECTS } from '@/lib/portfolio-data'
 import { SectionHeader } from './About'
-import { Button } from '@/components/ui/button'
 
 function ProjectVisual({ p }) {
   return (
@@ -60,9 +59,9 @@ export default function Projects() {
                 <h3 className="font-display text-2xl font-bold">{p.name}</h3>
                 <p className="mt-1 max-w-xl text-sm text-muted-foreground">{p.description}</p>
               </div>
-              <a href={p.demo} className="grid h-10 w-10 place-items-center rounded-full bg-white/5 text-muted-foreground transition-all hover:bg-white/10 hover:text-foreground">
+              <div className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-white/5 text-muted-foreground">
                 <ArrowUpRight className="h-4 w-4" />
-              </a>
+              </div>
             </div>
 
             <div className="mt-4 flex flex-wrap gap-1.5">
@@ -74,22 +73,10 @@ export default function Projects() {
             <ul className="mt-4 grid grid-cols-1 gap-1.5 text-sm text-muted-foreground sm:grid-cols-2">
               {p.features.map((f) => (
                 <li key={f} className="flex items-start gap-2">
-                  <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-violet-400" /> {f}
+                  <span className="mt-1.5 h-1 w-1 shrink-0 rounded-full bg-indigo-400" /> {f}
                 </li>
               ))}
             </ul>
-
-            <div className="mt-5 flex flex-wrap gap-2">
-              <Button asChild size="sm" variant="outline" className="border-white/15 bg-white/5 hover:bg-white/10">
-                <a href={p.github} target="_blank" rel="noreferrer"><Github className="mr-1.5 h-3.5 w-3.5" /> GitHub</a>
-              </Button>
-              <Button asChild size="sm" className="bg-gradient-to-br from-violet-500 to-fuchsia-500 text-white hover:from-violet-400 hover:to-fuchsia-400">
-                <a href={p.demo}><ExternalLink className="mr-1.5 h-3.5 w-3.5" /> Live Demo</a>
-              </Button>
-              <Button asChild size="sm" variant="ghost" className="text-muted-foreground hover:text-foreground">
-                <a href={p.study}><ScrollText className="mr-1.5 h-3.5 w-3.5" /> Case Study</a>
-              </Button>
-            </div>
           </motion.article>
         ))}
       </div>

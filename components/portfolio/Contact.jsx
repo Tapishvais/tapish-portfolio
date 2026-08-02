@@ -55,29 +55,29 @@ export default function Contact() {
             <p className="mt-1 text-sm text-muted-foreground">Based in Gurugram, working with teams worldwide.</p>
 
             <div className="mt-6 space-y-3 text-sm">
-              <a href="mailto:tapish.vais@example.com" className="flex items-center gap-3 rounded-xl bg-white/5 p-3 hover:bg-white/10">
-                <span className="grid h-9 w-9 place-items-center rounded-lg bg-gradient-to-br from-violet-500/20 to-cyan-400/20 text-violet-300"><Mail className="h-4 w-4" /></span>
+              <a href="mailto:tapishvais2003@gmail.com" className="flex items-center gap-3 rounded-xl bg-white/5 p-3 hover:bg-white/10">
+                <span className="grid h-9 w-9 place-items-center rounded-lg bg-gradient-to-br from-indigo-500/20 to-sky-500/20 text-indigo-300"><Mail className="h-4 w-4" /></span>
                 <div>
                   <div className="text-xs text-muted-foreground">Email</div>
-                  <div className="font-medium">tapish.vais@example.com</div>
+                  <div className="font-medium">tapishvais2003@gmail.com</div>
                 </div>
               </a>
-              <a href="https://github.com/tapishvais" target="_blank" rel="noreferrer" className="flex items-center gap-3 rounded-xl bg-white/5 p-3 hover:bg-white/10">
-                <span className="grid h-9 w-9 place-items-center rounded-lg bg-gradient-to-br from-violet-500/20 to-cyan-400/20 text-violet-300"><Github className="h-4 w-4" /></span>
+              <a href="https://github.com/Tapishvais" target="_blank" rel="noreferrer" className="flex items-center gap-3 rounded-xl bg-white/5 p-3 hover:bg-white/10">
+                <span className="grid h-9 w-9 place-items-center rounded-lg bg-gradient-to-br from-indigo-500/20 to-sky-500/20 text-indigo-300"><Github className="h-4 w-4" /></span>
                 <div>
                   <div className="text-xs text-muted-foreground">GitHub</div>
-                  <div className="font-medium">github.com/tapishvais</div>
+                  <div className="font-medium">github.com/Tapishvais</div>
                 </div>
               </a>
-              <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="flex items-center gap-3 rounded-xl bg-white/5 p-3 hover:bg-white/10">
-                <span className="grid h-9 w-9 place-items-center rounded-lg bg-gradient-to-br from-violet-500/20 to-cyan-400/20 text-violet-300"><Linkedin className="h-4 w-4" /></span>
+              <a href="https://www.linkedin.com/in/tapish-vais-249570248/" target="_blank" rel="noreferrer" className="flex items-center gap-3 rounded-xl bg-white/5 p-3 hover:bg-white/10">
+                <span className="grid h-9 w-9 place-items-center rounded-lg bg-gradient-to-br from-indigo-500/20 to-sky-500/20 text-indigo-300"><Linkedin className="h-4 w-4" /></span>
                 <div>
                   <div className="text-xs text-muted-foreground">LinkedIn</div>
-                  <div className="font-medium">linkedin.com/in/tapishvais</div>
+                  <div className="font-medium">linkedin.com/in/tapish-vais-249570248</div>
                 </div>
               </a>
               <div className="flex items-center gap-3 rounded-xl bg-white/5 p-3">
-                <span className="grid h-9 w-9 place-items-center rounded-lg bg-gradient-to-br from-violet-500/20 to-cyan-400/20 text-violet-300"><MapPin className="h-4 w-4" /></span>
+                <span className="grid h-9 w-9 place-items-center rounded-lg bg-gradient-to-br from-indigo-500/20 to-sky-500/20 text-indigo-300"><MapPin className="h-4 w-4" /></span>
                 <div>
                   <div className="text-xs text-muted-foreground">Location</div>
                   <div className="font-medium">Gurugram, Haryana</div>
@@ -85,8 +85,8 @@ export default function Contact() {
               </div>
             </div>
 
-            <Button asChild className="mt-6 w-full bg-gradient-to-br from-violet-500 to-fuchsia-500 text-white hover:from-violet-400 hover:to-fuchsia-400">
-              <a href="/resume.pdf" download><Download className="mr-2 h-4 w-4" /> Download Resume</a>
+            <Button asChild className="mt-6 w-full bg-gradient-to-br from-indigo-500 to-blue-500 text-white hover:from-indigo-400 hover:to-blue-400">
+              <a href="https://drive.google.com/uc?export=download&id=1kiUdo3PFD3hjrljNSPVy3IMfilcwk5Wm" download><Download className="mr-2 h-4 w-4" /> Download Resume</a>
             </Button>
           </div>
         </motion.div>
@@ -115,7 +115,7 @@ export default function Contact() {
           </div>
           <div className="mt-5 flex flex-wrap items-center justify-between gap-3">
             <p className="text-xs text-muted-foreground">Typical response time: under 24 hours.</p>
-            <Button type="submit" disabled={loading} className="bg-gradient-to-br from-violet-500 to-fuchsia-500 text-white hover:from-violet-400 hover:to-fuchsia-400">
+            <Button type="submit" disabled={loading} className="bg-gradient-to-br from-indigo-500 to-blue-500 text-white hover:from-indigo-400 hover:to-blue-400">
               <Send className="mr-1.5 h-4 w-4" /> {loading ? 'Sending…' : 'Send message'}
             </Button>
           </div>

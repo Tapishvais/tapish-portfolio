@@ -79,7 +79,7 @@ export default function RootLayout({ children }) {
       <head>
         <link
           rel="icon"
-          href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%237c3aed'/%3E%3Cstop offset='1' stop-color='%2306b6d4'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Ctext x='50' y='66' font-family='ui-sans-serif,system-ui' font-size='54' font-weight='800' text-anchor='middle' fill='white'%3ETV%3C/text%3E%3C/svg%3E"
+          href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1' y1='0' y2='1'%3E%3Cstop offset='0' stop-color='%234f46e5'/%3E%3Cstop offset='1' stop-color='%230ea5e9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Ctext x='50' y='66' font-family='ui-sans-serif,system-ui' font-size='54' font-weight='800' text-anchor='middle' fill='white'%3ETV%3C/text%3E%3C/svg%3E"
         />
         <script
           dangerouslySetInnerHTML={{
@@ -88,7 +88,7 @@ export default function RootLayout({ children }) {
           }}
         />
       </head>
-      <body className="bg-background text-foreground font-sans antialiased selection:bg-violet-500/30 selection:text-white">
+      <body className="bg-background text-foreground font-sans antialiased selection:bg-indigo-500/30 selection:text-white">
         <Providers>{children}</Providers>
       </body>
     </html>

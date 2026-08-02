@@ -46,7 +46,7 @@ export default function Skills() {
                 </li>
               ))}
             </ul>
-            <div className="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-violet-500/10 blur-3xl transition-opacity group-hover:opacity-80" />
+            <div className="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-indigo-500/10 blur-3xl transition-opacity group-hover:opacity-80" />
           </motion.div>
         ))}
       </div>

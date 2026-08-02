@@ -47,10 +47,10 @@ export default function CommandPalette({ open, setOpen }) {
         </CommandGroup>
         <CommandSeparator />
         <CommandGroup heading="Links">
-          <CommandItem onSelect={() => external('https://github.com/tapishvais')}><Github className="mr-2 h-4 w-4" /> GitHub</CommandItem>
-          <CommandItem onSelect={() => external('https://linkedin.com')}><Linkedin className="mr-2 h-4 w-4" /> LinkedIn</CommandItem>
-          <CommandItem onSelect={() => (window.location.href = 'mailto:tapish.vais@example.com')}><Mail className="mr-2 h-4 w-4" /> Email me</CommandItem>
-          <CommandItem onSelect={() => (window.location.href = '/resume.pdf')}><Download className="mr-2 h-4 w-4" /> Download Resume</CommandItem>
+          <CommandItem onSelect={() => external('https://github.com/Tapishvais')}><Github className="mr-2 h-4 w-4" /> GitHub</CommandItem>
+          <CommandItem onSelect={() => external('https://www.linkedin.com/in/tapish-vais-249570248/')}><Linkedin className="mr-2 h-4 w-4" /> LinkedIn</CommandItem>
+          <CommandItem onSelect={() => (window.location.href = 'mailto:tapishvais2003@gmail.com')}><Mail className="mr-2 h-4 w-4" /> Email me</CommandItem>
+          <CommandItem onSelect={() => (window.location.href = 'https://drive.google.com/uc?export=download&id=1kiUdo3PFD3hjrljNSPVy3IMfilcwk5Wm')}><Download className="mr-2 h-4 w-4" /> Download Resume</CommandItem>
         </CommandGroup>
       </CommandList>
     </CommandDialog>

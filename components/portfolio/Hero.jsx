@@ -62,9 +62,9 @@ export default function Hero() {
   return (
     <section id="home" className="relative isolate overflow-hidden pt-32 sm:pt-40">
       <div className="pointer-events-none absolute inset-0 -z-10 grid-bg" />
-      <div className="pointer-events-none absolute -top-32 left-1/2 -z-10 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-violet-600/30 blur-[120px] animate-blob" />
+      <div className="pointer-events-none absolute -top-32 left-1/2 -z-10 h-[520px] w-[520px] -translate-x-1/2 rounded-full bg-indigo-600/30 blur-[120px] animate-blob" />
       <div className="pointer-events-none absolute -top-10 right-0 -z-10 h-[380px] w-[380px] rounded-full bg-cyan-500/20 blur-[110px] animate-blob" />
-      <div className="pointer-events-none absolute bottom-0 left-0 -z-10 h-[380px] w-[380px] rounded-full bg-fuchsia-500/20 blur-[110px] animate-blob" />
+      <div className="pointer-events-none absolute bottom-0 left-0 -z-10 h-[380px] w-[380px] rounded-full bg-blue-500/20 blur-[110px] animate-blob" />
 
       <div className="container mx-auto grid max-w-6xl grid-cols-1 items-center gap-14 px-4 pb-10 lg:grid-cols-2 lg:gap-8 lg:pb-24">
         <motion.div
@@ -98,7 +98,7 @@ export default function Hero() {
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
-            <Button asChild size="lg" className="group bg-gradient-to-br from-violet-500 to-fuchsia-500 text-white shadow-[0_0_40px_-10px_rgba(232,121,249,0.7)] hover:from-violet-400 hover:to-fuchsia-400">
+            <Button asChild size="lg" className="group bg-gradient-to-br from-indigo-500 to-blue-500 text-white shadow-[0_0_40px_-10px_rgba(59,130,246,0.5)] hover:from-indigo-400 hover:to-blue-400">
               <a href="#projects">
                 View Projects <ArrowRight className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-0.5" />
               </a>
@@ -109,9 +109,9 @@ export default function Hero() {
           </div>
 
           <div className="mt-8 flex items-center gap-4 text-sm text-muted-foreground">
-            <a href="https://github.com/tapishvais" target="_blank" rel="noreferrer" className="flex items-center gap-1.5 hover:text-foreground"><Github className="h-4 w-4" /> GitHub</a>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="flex items-center gap-1.5 hover:text-foreground"><Linkedin className="h-4 w-4" /> LinkedIn</a>
-            <a href="mailto:tapish.vais@example.com" className="flex items-center gap-1.5 hover:text-foreground"><Mail className="h-4 w-4" /> Email</a>
+            <a href="https://github.com/Tapishvais" target="_blank" rel="noreferrer" className="flex items-center gap-1.5 hover:text-foreground"><Github className="h-4 w-4" /> GitHub</a>
+            <a href="https://www.linkedin.com/in/tapish-vais-249570248/" target="_blank" rel="noreferrer" className="flex items-center gap-1.5 hover:text-foreground"><Linkedin className="h-4 w-4" /> LinkedIn</a>
+            <a href="mailto:tapishvais2003@gmail.com" className="flex items-center gap-1.5 hover:text-foreground"><Mail className="h-4 w-4" /> Email</a>
             <span className="flex items-center gap-1.5"><MapPin className="h-4 w-4" /> Gurugram, IN</span>
           </div>
         </motion.div>
@@ -134,11 +134,11 @@ export default function Hero() {
 
             {/* Fake code block */}
             <div className="rounded-xl border border-white/10 bg-black/40 p-4 font-mono text-[12.5px] leading-6">
-              <div><span className="text-fuchsia-400">const</span> <span className="text-cyan-300">developer</span> = {'{'}</div>
-              <div className="pl-4"><span className="text-violet-300">name</span>: <span className="text-emerald-300">'Tapish Vais'</span>,</div>
-              <div className="pl-4"><span className="text-violet-300">stack</span>: [<span className="text-emerald-300">'React Native'</span>, <span className="text-emerald-300">'Next.js'</span>, <span className="text-emerald-300">'Node'</span>],</div>
-              <div className="pl-4"><span className="text-violet-300">focus</span>: <span className="text-emerald-300">'fintech + AI'</span>,</div>
-              <div className="pl-4"><span className="text-violet-300">shipping</span>: <span className="text-amber-300">true</span>,</div>
+              <div><span className="text-indigo-300">const</span> <span className="text-cyan-300">developer</span> = {'{'}</div>
+              <div className="pl-4"><span className="text-indigo-300">name</span>: <span className="text-emerald-300">'Tapish Vais'</span>,</div>
+              <div className="pl-4"><span className="text-indigo-300">stack</span>: [<span className="text-emerald-300">'React Native'</span>, <span className="text-emerald-300">'Next.js'</span>, <span className="text-emerald-300">'Node'</span>],</div>
+              <div className="pl-4"><span className="text-indigo-300">focus</span>: <span className="text-emerald-300">'fintech + AI'</span>,</div>
+              <div className="pl-4"><span className="text-indigo-300">shipping</span>: <span className="text-amber-300">true</span>,</div>
               <div>{'};'}</div>
               <div className="mt-2 text-muted-foreground">$ <span className="text-white">yarn build</span> <span className="animate-shimmer inline-block h-3 w-16 align-middle rounded" /></div>
             </div>
@@ -166,7 +166,7 @@ export default function Hero() {
             </div>
           </div>
 
-          <div className="pointer-events-none absolute -inset-4 -z-10 rounded-[2rem] bg-gradient-to-tr from-violet-500/20 via-fuchsia-500/10 to-cyan-400/20 blur-2xl" />
+          <div className="pointer-events-none absolute -inset-4 -z-10 rounded-[2rem] bg-gradient-to-tr from-indigo-500/20 via-blue-500/10 to-sky-400/20 blur-2xl" />
         </motion.div>
       </div>
 
@@ -185,7 +185,7 @@ export default function Hero() {
               initial={{ y: -20 }}
               animate={{ y: 20 }}
               transition={{ duration: 1.4, repeat: Infinity, ease: 'easeInOut' }}
-              className="h-4 w-full bg-gradient-to-b from-violet-400 to-cyan-400"
+              className="h-4 w-full bg-gradient-to-b from-indigo-400 to-sky-400"
             />
           </div>
         </motion.div>

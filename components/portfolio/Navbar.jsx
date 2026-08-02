@@ -23,11 +23,11 @@ export default function Navbar({ onOpenPalette }) {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
       className={`fixed inset-x-0 top-3 z-50 mx-auto flex max-w-6xl items-center justify-between rounded-2xl px-4 py-2.5 transition-all sm:px-5 ${
-        scrolled ? 'glass-strong shadow-[0_0_60px_-20px_rgba(124,58,237,0.6)]' : 'bg-transparent'
+        scrolled ? 'glass-strong shadow-[0_0_60px_-20px_rgba(79,70,229,0.55)]' : 'bg-transparent'
       }`}
     >
       <a href="#home" className="flex items-center gap-2">
-        <span className="grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-violet-500 to-cyan-400 text-sm font-bold text-white shadow-md">
+        <span className="grid h-8 w-8 place-items-center rounded-lg bg-gradient-to-br from-indigo-500 to-sky-500 text-sm font-bold text-white shadow-md">
           TV
         </span>
         <span className="font-display text-sm font-semibold tracking-tight">Tapish Vais</span>
@@ -56,8 +56,8 @@ export default function Navbar({ onOpenPalette }) {
           <kbd className="ml-2 rounded bg-white/5 px-1.5 py-0.5 text-[10px]">⌘K</kbd>
         </button>
 
-        <Button asChild size="sm" className="hidden bg-gradient-to-br from-violet-500 to-fuchsia-500 text-white shadow-[0_0_30px_-10px_rgba(232,121,249,0.8)] hover:from-violet-400 hover:to-fuchsia-400 sm:inline-flex">
-          <a href="#contact">
+        <Button asChild size="sm" className="hidden bg-gradient-to-br from-indigo-500 to-blue-500 text-white shadow-[0_0_30px_-10px_rgba(59,130,246,0.55)] hover:from-indigo-400 hover:to-blue-400 sm:inline-flex">
+          <a href="https://drive.google.com/uc?export=download&id=1kiUdo3PFD3hjrljNSPVy3IMfilcwk5Wm" target="_blank" rel="noreferrer">
             <Download className="mr-1.5 h-3.5 w-3.5" /> Resume
           </a>
         </Button>

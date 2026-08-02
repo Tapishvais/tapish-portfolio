@@ -49,7 +49,7 @@ export default function CustomCursor() {
           width: 36,
           height: 36,
           borderRadius: 999,
-          border: '1.5px solid rgba(167,139,250,0.85)',
+          border: '1.5px solid rgba(129,140,248,0.9)',
           transform: 'translate3d(-100px,-100px,0)',
           transition: 'transform 60ms linear, scale 200ms ease',
           scale: 'var(--s, 1)',
