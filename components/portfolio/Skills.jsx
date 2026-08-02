@@ -25,7 +25,12 @@ export default function Skills() {
           >
             <div className="flex items-center justify-between">
               <h3 className="font-display text-lg font-semibold">{group.title}</h3>
-              <span className={`rounded-full bg-gradient-to-r ${group.accent} px-2 py-0.5 text-[10px] font-medium text-white`}>{group.items.length}</span>
+              <span
+                className="rounded-full px-2 py-0.5 text-[10px] font-medium text-white"
+                style={{ background: group.gradient }}
+              >
+                {group.items.length}
+              </span>
             </div>
             <ul className="mt-5 space-y-4">
               {group.items.map((skill) => (
@@ -40,7 +45,8 @@ export default function Skills() {
                       whileInView={{ width: `${skill.level}%` }}
                       viewport={{ once: true, margin: '-40px' }}
                       transition={{ duration: 1.1, ease: [0.16, 1, 0.3, 1] }}
-                      className={`h-full rounded-full bg-gradient-to-r ${group.accent}`}
+                      className="h-full rounded-full"
+                      style={{ background: group.gradient }}
                     />
                   </div>
                 </li>

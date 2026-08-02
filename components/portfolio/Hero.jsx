@@ -39,17 +39,17 @@ function useTyping(words, speed = 60, pause = 1400) {
   return text
 }
 
-function TechCard({ title, subtitle, glyph, className = '' }) {
+function TechCard({ title, subtitle, glyph }) {
   return (
     <motion.div
-      whileHover={{ y: -4, rotate: 0 }}
-      className={`glass gradient-border relative overflow-hidden rounded-2xl p-3.5 ${className}`}
+      whileHover={{ y: -3 }}
+      className="glass gradient-border relative overflow-hidden rounded-xl p-3"
     >
-      <div className="flex items-center gap-3">
-        <div className="grid h-9 w-9 place-items-center rounded-xl bg-white/5 text-lg">{glyph}</div>
-        <div>
-          <div className="text-sm font-semibold">{title}</div>
-          <div className="text-[11px] text-muted-foreground">{subtitle}</div>
+      <div className="flex items-center gap-2.5">
+        <div className="grid h-8 w-8 shrink-0 place-items-center rounded-lg bg-white/5 text-base">{glyph}</div>
+        <div className="min-w-0">
+          <div className="truncate text-xs font-semibold">{title}</div>
+          <div className="truncate text-[10px] text-muted-foreground">{subtitle}</div>
         </div>
       </div>
     </motion.div>
@@ -143,14 +143,16 @@ export default function Hero() {
               <div className="mt-2 text-muted-foreground">$ <span className="text-white">yarn build</span> <span className="animate-shimmer inline-block h-3 w-16 align-middle rounded" /></div>
             </div>
 
-            {/* Floating tech cards */}
-            <TechCard glyph="⚛" title="React Native" subtitle="0.74 · New Architecture" className="absolute -left-6 top-24 hidden animate-float sm:block" />
-            <TechCard glyph="▲" title="Next.js 15" subtitle="App Router · RSC" className="absolute -right-6 top-8 hidden animate-float sm:block" />
-            <TechCard glyph="💳" title="Stripe" subtitle="Payments" className="absolute -right-3 bottom-16 hidden animate-float sm:block" />
-            <TechCard glyph="🏦" title="Plaid" subtitle="Bank Linking" className="absolute -left-6 -bottom-4 hidden animate-float sm:block" />
+            {/* Tech pills — clean grid, no overlap */}
+            <div className="mt-4 grid grid-cols-2 gap-2">
+              <TechCard glyph="⚛" title="React Native" subtitle="0.74 · New Arch" />
+              <TechCard glyph="▲" title="Next.js 15" subtitle="App Router · RSC" />
+              <TechCard glyph="💳" title="Stripe" subtitle="Payments" />
+              <TechCard glyph="🏦" title="Plaid" subtitle="Bank Linking" />
+            </div>
 
             {/* Stats footer */}
-            <div className="mt-4 grid grid-cols-3 gap-2">
+            <div className="mt-3 grid grid-cols-3 gap-2">
               <div className="rounded-lg bg-white/5 p-2 text-center">
                 <div className="font-display text-lg font-bold text-gradient-brand">99</div>
                 <div className="text-[10px] text-muted-foreground">Lighthouse</div>
