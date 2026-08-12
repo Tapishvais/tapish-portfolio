@@ -1,6 +1,7 @@
 import './globals.css'
 import { Inter, Space_Grotesk, JetBrains_Mono } from 'next/font/google'
 import { Providers } from './providers'
+import { SITE_URL } from '@/lib/portfolio-data'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -21,7 +22,7 @@ const mono = JetBrains_Mono({
 })
 
 export const metadata = {
-  metadataBase: new URL('https://tapishvais.dev'),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: 'Tapish Vais — React Native & Full Stack Developer',
     template: '%s · Tapish Vais',
@@ -47,7 +48,7 @@ export const metadata = {
     title: 'Tapish Vais — React Native & Full Stack Developer',
     description:
       'Building high-performance mobile applications, modern web platforms and scalable backend solutions.',
-    url: 'https://tapishvais.dev',
+    url: SITE_URL,
     siteName: 'Tapish Vais',
     locale: 'en_US',
     type: 'website',

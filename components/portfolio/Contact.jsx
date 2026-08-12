@@ -8,6 +8,7 @@ import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { Label } from '@/components/ui/label'
 import { toast } from 'sonner'
+import { RESUME_URL } from '@/lib/portfolio-data'
 import { SectionHeader } from './About'
 
 export default function Contact() {
@@ -86,7 +87,7 @@ export default function Contact() {
             </div>
 
             <Button asChild className="mt-6 w-full bg-gradient-to-br from-indigo-500 to-blue-500 text-white hover:from-indigo-400 hover:to-blue-400">
-              <a href="https://drive.google.com/uc?export=download&id=1kiUdo3PFD3hjrljNSPVy3IMfilcwk5Wm" download><Download className="mr-2 h-4 w-4" /> Download Resume</a>
+              <a href={RESUME_URL} target="_blank" rel="noreferrer"><Download className="mr-2 h-4 w-4" /> Download Resume</a>
             </Button>
           </div>
         </motion.div>

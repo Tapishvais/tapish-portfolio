@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { Command, Download, Menu, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import { NAV_LINKS } from '@/lib/portfolio-data'
+import { NAV_LINKS, RESUME_URL } from '@/lib/portfolio-data'
 
 export default function Navbar({ onOpenPalette }) {
   const [scrolled, setScrolled] = useState(false)
@@ -57,7 +57,7 @@ export default function Navbar({ onOpenPalette }) {
         </button>
 
         <Button asChild size="sm" className="hidden bg-gradient-to-br from-indigo-500 to-blue-500 text-white shadow-[0_0_30px_-10px_rgba(59,130,246,0.55)] hover:from-indigo-400 hover:to-blue-400 sm:inline-flex">
-          <a href="https://drive.google.com/uc?export=download&id=1kiUdo3PFD3hjrljNSPVy3IMfilcwk5Wm" target="_blank" rel="noreferrer">
+          <a href={RESUME_URL} target="_blank" rel="noreferrer">
             <Download className="mr-1.5 h-3.5 w-3.5" /> Resume
           </a>
         </Button>
